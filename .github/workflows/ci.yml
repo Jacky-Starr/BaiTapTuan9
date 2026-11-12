@@ -1,4 +1,4 @@
-name: Java CI with Maven
+name: Java CI Matrix
 
 on:
   push:
@@ -7,8 +7,13 @@ on:
     branches: [ main, master ]
 
 jobs:
-  build-and-package:
-    runs-on: ubuntu-latest
+  build-and-test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    runs-on: ${{ matrix.os }}
 
     steps:
       - name: 1. Checkout mã nguồn
@@ -26,5 +31,5 @@ jobs:
       - name: 4. Lưu trữ file JAR Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: math-utils-jar
+          name: math-utils-jar-${{ matrix.os }}
           path: target/*.jar

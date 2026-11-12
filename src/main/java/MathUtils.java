@@ -17,4 +17,9 @@ public class MathUtils {
         }
         return a / b;
     }
+
+    // Cố tình viết cứng dấu gạch chéo của Windows
+    public static String getReportFilePath() {
+        return "reports\\2026\\summary.txt";
+    }
 }
