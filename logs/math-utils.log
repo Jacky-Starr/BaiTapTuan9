@@ -1,0 +1,18 @@
+2026-11-13 01:16:01.867 [main] INFO  MathUtils - Tìm giá trị lớn nhất giữa 10 và 5
+2026-11-13 01:16:01.878 [main] INFO  MathUtils - === KHOI CHAY UNG DUNG MATHUTILS TU FILE JAR DOC LAP ===
+2026-11-13 01:16:01.878 [main] INFO  MathUtils - Tìm giá trị lớn nhất giữa 15 và 25
+2026-11-13 01:16:01.879 [main] INFO  MathUtils - Thực hiện phép chia 20 cho 4
+2026-11-13 01:16:01.880 [main] INFO  MathUtils - Thực hiện phép chia 10 cho 0
+2026-11-13 01:16:01.880 [main] ERROR MathUtils - Lỗi: Chia cho 0
+2026-11-13 01:16:01.880 [main] WARN  MathUtils - Da bat duoc ngoai le chia cho 0 thanh cong trong ham main.
+2026-11-13 01:16:01.880 [main] INFO  MathUtils - === KET THUC CHUONG TRINH ===
+2026-11-13 01:16:01.886 [main] INFO  MathUtils - Thực hiện phép chia 10 cho 2
+2026-11-13 01:16:01.887 [main] INFO  MathUtils - Thực hiện phép chia 10 cho 0
+2026-11-13 01:16:01.887 [main] ERROR MathUtils - Lỗi: Chia cho 0
+2026-11-13 01:16:11.322 [main] INFO  MathUtils - === KHOI CHAY UNG DUNG MATHUTILS TU FILE JAR DOC LAP ===
+2026-11-13 01:16:11.323 [main] INFO  MathUtils - Tìm giá trị lớn nhất giữa 15 và 25
+2026-11-13 01:16:11.324 [main] INFO  MathUtils - Thực hiện phép chia 20 cho 4
+2026-11-13 01:16:11.325 [main] INFO  MathUtils - Thực hiện phép chia 10 cho 0
+2026-11-13 01:16:11.325 [main] ERROR MathUtils - Lỗi: Chia cho 0
+2026-11-13 01:16:11.325 [main] WARN  MathUtils - Da bat duoc ngoai le chia cho 0 thanh cong trong ham main.
+2026-11-13 01:16:11.325 [main] INFO  MathUtils - === KET THUC CHUONG TRINH ===

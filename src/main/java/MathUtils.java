@@ -92,6 +92,11 @@ public class MathUtils {
         System.out.println("Factorial(5) = " + factorial(5));
         System.out.println("IsPrime(17) = " + isPrime(17));
         System.out.println("Report Path = " + getReportFilePath());
+        try {
+            divide(10, 0);
+        } catch (IllegalArgumentException e) {
+            logger.warn("Da bat duoc ngoai le chia cho 0 thanh cong trong ham main.");
+        }
         logger.info("=== KET THUC CHUONG TRINH ===");
     }
 }
