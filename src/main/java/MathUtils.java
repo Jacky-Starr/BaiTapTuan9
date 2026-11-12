@@ -79,4 +79,19 @@ public class MathUtils {
         }
         return true;
     }
+
+    /**
+     * Điểm khởi chạy chính của ứng dụng khi thực thi tệp JAR độc lập.
+     *
+     * @param args tham số dòng lệnh
+     */
+    public static void main(String[] args) {
+        logger.info("=== KHOI CHAY UNG DUNG MATHUTILS TU FILE JAR DOC LAP ===");
+        System.out.println("Max(15, 25) = " + max(15, 25));
+        System.out.println("Divide(20, 4) = " + divide(20, 4));
+        System.out.println("Factorial(5) = " + factorial(5));
+        System.out.println("IsPrime(17) = " + isPrime(17));
+        System.out.println("Report Path = " + getReportFilePath());
+        logger.info("=== KET THUC CHUONG TRINH ===");
+    }
 }

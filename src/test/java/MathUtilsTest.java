@@ -32,4 +32,9 @@ public class MathUtilsTest {
         assertFalse(MathUtils.isPrime(4));
         assertFalse(MathUtils.isPrime(1));
     }
+
+    @Test
+    void testMain() {
+        MathUtils.main(new String[]{});
+    }
 }

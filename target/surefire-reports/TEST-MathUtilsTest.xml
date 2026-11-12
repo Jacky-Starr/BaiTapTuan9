@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="MathUtilsTest" time="0.084" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="MathUtilsTest" time="0.095" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-25.0.4.1-oracle-x64/lib"/>
-    <property name="sun.java.command" value="/home/hominh/LTNC/HoDucMinh_25020697_Week9/Bai03 -&gt; 09/target/surefire/surefirebooter-20261113002559511_3.jar /home/hominh/LTNC/HoDucMinh_25020697_Week9/Bai03 -&gt; 09/target/surefire 2026-11-13T00-25-59_473-jvmRun1 surefire-20261113002559511_1tmp surefire_0-20261113002559511_2tmp"/>
+    <property name="sun.java.command" value="/home/hominh/LTNC/HoDucMinh_25020697_Week9/Bai03 -&gt; 09/target/surefire/surefirebooter-20261113011033972_3.jar /home/hominh/LTNC/HoDucMinh_25020697_Week9/Bai03 -&gt; 09/target/surefire 2026-11-13T01-10-33_932-jvmRun1 surefire-20261113011033972_1tmp surefire_0-20261113011033972_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/hominh/LTNC/HoDucMinh_25020697_Week9/Bai03 -&gt; 09/target/test-classes:/home/hominh/LTNC/HoDucMinh_25020697_Week9/Bai03 -&gt; 09/target/classes:/home/hominh/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/home/hominh/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/home/hominh/.m2/repository/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar:/home/hominh/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/home/hominh/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/home/hominh/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/hominh/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/home/hominh/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/hominh/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/home/hominh/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/home/hominh/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/hominh/LTNC/HoDucMinh_25020697_Week9/Bai03 -&gt; 09/target/surefire/surefirebooter-20261113002559511_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/hominh/LTNC/HoDucMinh_25020697_Week9/Bai03 -&gt; 09/target/surefire/surefirebooter-20261113011033972_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="25.0.4.1+1-LTS-5"/>
     <property name="user.name" value="E-CE7-25020697"/>
@@ -55,15 +55,29 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="testMax" classname="MathUtilsTest" time="0.068">
-    <system-out><![CDATA[00:25:59.977 [main] INFO MathUtils -- Tìm giá trị lớn nhất giữa 10 và 5
+  <testcase name="testMax" classname="MathUtilsTest" time="0.071">
+    <system-out><![CDATA[01:10:34.449 [main] INFO MathUtils -- Tìm giá trị lớn nhất giữa 10 và 5
 ]]></system-out>
   </testcase>
-  <testcase name="testReportFilePath" classname="MathUtilsTest" time="0.001"/>
+  <testcase name="testMain" classname="MathUtilsTest" time="0.003">
+    <system-out><![CDATA[01:10:34.463 [main] INFO MathUtils -- === KHOI CHAY UNG DUNG MATHUTILS TU FILE JAR DOC LAP ===
+01:10:34.463 [main] INFO MathUtils -- Tìm giá trị lớn nhất giữa 15 và 25
+Max(15, 25) = 25
+01:10:34.464 [main] INFO MathUtils -- Thực hiện phép chia 20 cho 4
+Divide(20, 4) = 5
+Factorial(5) = 120
+IsPrime(17) = true
+Report Path = reports/2026/summary.txt
+01:10:34.464 [main] INFO MathUtils -- === KET THUC CHUONG TRINH ===
+]]></system-out>
+  </testcase>
+  <testcase name="testFactorial" classname="MathUtilsTest" time="0.002"/>
+  <testcase name="testReportFilePath" classname="MathUtilsTest" time="0.002"/>
   <testcase name="testDivide" classname="MathUtilsTest" time="0.001">
-    <system-out><![CDATA[00:25:59.990 [main] INFO MathUtils -- Thực hiện phép chia 10 cho 2
-00:25:59.991 [main] INFO MathUtils -- Thực hiện phép chia 10 cho 0
-00:25:59.991 [main] ERROR MathUtils -- Lỗi: Chia cho 0
+    <system-out><![CDATA[01:10:34.470 [main] INFO MathUtils -- Thực hiện phép chia 10 cho 2
+01:10:34.470 [main] INFO MathUtils -- Thực hiện phép chia 10 cho 0
+01:10:34.470 [main] ERROR MathUtils -- Lỗi: Chia cho 0
 ]]></system-out>
   </testcase>
+  <testcase name="testIsPrime" classname="MathUtilsTest" time="0.001"/>
 </testsuite>
