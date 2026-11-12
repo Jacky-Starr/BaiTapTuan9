@@ -1,2 +1,4 @@
-echo -e "target/\n.idea/\n*.iml" > .gitignore
-echo "logs/" >> .gitignore
+target/
+logs/
+.idea/
+*.iml
