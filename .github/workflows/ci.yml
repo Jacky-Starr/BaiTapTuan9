@@ -2,7 +2,7 @@ name: Java CI, Coverage, Cache & PR Review
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main, master, feat/* ]
   pull_request:
     branches: [ main, master ]
 
@@ -25,19 +25,20 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
 
-      - name: 3. Chạy Checkstyle xuất báo cáo XML
-        run: mvn -B checkstyle:checkstyle
-
-      - name: 4. Bot tự động bình luận lỗi lên Pull Request
-        if: github.event_name == 'pull_request'
-        uses: reviewdog/action-checkstyle@v2
+      - name: 3. Cài đặt Reviewdog
+        uses: reviewdog/action-setup@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          report_path: target/checkstyle-result.xml
-          reporter: github-pr-review
-          fail_on_error: true
+          reviewdog_version: latest
 
-      - name: 5. Xác nhận Checkstyle đạt chuẩn
+      - name: 4. Chạy Checkstyle và Bot Review lên PR
+        if: github.event_name == 'pull_request'
+        env:
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mvn -B checkstyle:checkstyle
+          reviewdog -f=checkstyle -name="checkstyle" -reporter=github-pr-review -fail-on-error < target/checkstyle-result.xml
+
+      - name: 5. Kiểm tra Checkstyle đạt chuẩn
         run: mvn -B checkstyle:check
 
   build-and-test:
