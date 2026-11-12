@@ -1,4 +1,4 @@
-name: Java CI Matrix & Coverage
+name: Java CI Matrix, Coverage & Cache
 
 on:
   push:
@@ -8,6 +8,7 @@ on:
 
 jobs:
   build-and-test:
+    timeout-minutes: 10
     strategy:
       fail-fast: false
       matrix:
@@ -19,11 +20,12 @@ jobs:
       - name: 1. Checkout mã nguồn
         uses: actions/checkout@v4
 
-      - name: 2. Cài đặt JDK 17
+      - name: 2. Cài đặt JDK 17 & Bật Maven Cache
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
+          cache: 'maven'
 
       - name: 3. Chạy Maven Verify (Test, Package & JaCoCo Check)
         run: mvn -B clean verify
