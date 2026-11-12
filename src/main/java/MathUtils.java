@@ -79,4 +79,10 @@ public class MathUtils {
         }
         return true;
     }
+
+    // Thêm hàm vi phạm quy tắc
+    public static int Tinh_Tong(int a, int b) {
+        int Ket_Qua = a + b;
+        return Ket_Qua;
+    }
 }
