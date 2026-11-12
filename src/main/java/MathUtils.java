@@ -1,6 +1,8 @@
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.nio.file.Paths;
+
 public class MathUtils {
     private static final Logger logger = LoggerFactory.getLogger(MathUtils.class);
 
@@ -18,8 +20,8 @@ public class MathUtils {
         return a / b;
     }
 
-    // Cố tình viết cứng dấu gạch chéo của Windows
+    // Đã Refactor: Tự động dùng '/' trên Linux/macOS và '\' trên Windows
     public static String getReportFilePath() {
-        return "reports\\2026\\summary.txt";
+        return Paths.get("reports", "2026", "summary.txt").toString();
     }
 }
