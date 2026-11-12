@@ -25,6 +25,7 @@ public class MathUtils {
         return Paths.get("reports", "2026", "summary.txt").toString();
     }
 
+    // Thêm 2 hàm factorial và isPrime để test bài 5
     public static long factorial(int n) {
         if (n < 0) {
             throw new IllegalArgumentException("Negative number");
