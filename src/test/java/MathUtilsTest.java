@@ -19,4 +19,17 @@ public class MathUtilsTest {
         String expected = Paths.get("reports", "2026", "summary.txt").toString();
         assertEquals(expected, MathUtils.getReportFilePath());
     }
+
+    @Test
+    void testFactorial() {
+        assertEquals(120, MathUtils.factorial(5));
+        assertThrows(IllegalArgumentException.class, () -> MathUtils.factorial(-1));
+    }
+
+    @Test
+    void testIsPrime() {
+        assertTrue(MathUtils.isPrime(7));
+        assertFalse(MathUtils.isPrime(4));
+        assertFalse(MathUtils.isPrime(1));
+    }
 }
