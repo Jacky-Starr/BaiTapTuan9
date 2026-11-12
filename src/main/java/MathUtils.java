@@ -6,7 +6,7 @@ public class MathUtils {
 
     public static int max(int a, int b) {
         logger.info("Tìm giá trị lớn nhất giữa {} và {}", a, b);
-        return (a < b) ? a : b;
+        return (a >= b) ? a : b;
     }
 
     public static int divide(int a, int b) {
