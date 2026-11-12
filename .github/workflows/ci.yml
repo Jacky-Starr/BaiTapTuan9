@@ -1,0 +1,30 @@
+name: Java CI with Maven
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-and-package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1. Checkout mã nguồn
+        uses: actions/checkout@v4
+
+      - name: 2. Cài đặt JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: 3. Chạy Maven Test và Package
+        run: mvn -B clean package
+
+      - name: 4. Lưu trữ file JAR Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: math-utils-jar
+          path: target/*.jar
